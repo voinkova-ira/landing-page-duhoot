@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landind Page</title>
+    <link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules\font-awesome\css\font-awesome.css" rel="stylesheet">
+    <link href="styles\styles.css" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" class="d-inline-block align-top navbar-custom-logo" alt="Logo">
+                <span class="navbar-custom-brand-text">duhoot</span>
+            </a>
+            <button class="navbar-toggler navbar-custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="box"></div>
+                <ul class="navbar-nav text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reality</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Living</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entertainment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mobility</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav align-self-stretch">
+                        <li class="nav-item nav-icon nav-icon-search "><i class="fa fa-search fa-lg" aria-hidden="true"></i></li>
+                        <li class="nav-item nav-icon nav-icon-user text-uppercase"><i class="fa fa-user fa-lg" aria-hidden="true"></i>&nbsp;Login</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="search-section containet-fluid">
+        <h2 class="mb-4">What are you looking for?</h2>
+        <form class="search-form">
+            <div class="form-group search-form-group d-sm-flex">
+                <select class="form-control basic-form-control form-control-lg mr-3 mt-3">
+                    <option>Dubai</option>
+                    <option>Large select</option>
+                    <option>Large select</option>
+                    
+                </select>
+                <select class="form-control basic-form-control form-control-lg mt-3">
+                    <option>Education</option>
+                    <option>Large select</option>
+                    <option>Large select</option>
+                </select>
+            </div>
+            <div class="form-group search-form-group d-flex">
+                <input class="form-control basic-form-control form-control-lg" type="text" placeholder="Keyword, name, date...">
+            </div>
+            <button type="submit" class="btn btn-confirm search-form-btn  mt-3">Search</button>
+          </form>
+    </div>
+    <main>
+        <div class="container">
+            <div class="posts-filter">
+                <div class="fa__circle fa__circle_sm">
+                        <!-- fa-fw -->
+                    <i class="fa fa-home " aria-hidden="true"></i>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <i class="fa fa-music" aria-hidden="true"></i>
+                    <i class="fa fa-bus" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="posts">
+
+            </div>
+        </div>
+        
+        <div class="offer">
+            <div class="container">
+                <h1 class="text-center">What can do duhoot offer you?</h1>
+                <span></span>
+                <div class="offer-filter">
+                    <div class="fa__circle fa__circle_lg">
+                            <!-- fa-fw -->
+                        <i class="fa fa-home fa-4x" aria-hidden="true"></i>
+                        <i class="fa fa-user fa-4x" aria-hidden="true"></i>
+                        <i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i>
+                        <i class="fa fa-music fa-4x" aria-hidden="true"></i>
+                        <i class="fa fa-bus fa-4x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <p class="text-center">Reality</p>
+                <div class="row fa__circle fa__circle_md">
+                    <div class="col-md-6">
+                        <i class="fa fa-bolt fa-2x" aria-hidden="true"></i>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <i class="fa fa-leaf fa-2x" aria-hidden="true"></i>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>Subsceibe to our newsletter</p>
+    </footer>
+    <!-- SCRIPT -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

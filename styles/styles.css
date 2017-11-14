@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.otf") format("opentype"), url("../fonts/Gotham-Book.woff") format("woff"), url("Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'Gotham-Book';
+  font-size: 16px;
+  color: #4b5b6a;
+  font-size: 14px;
+  margin: auto; }
+
+.btn-confirm {
+  color: #fff;
+  background-color: #e94e38;
+  border-radius: 2.3rem;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.basic-form-control {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.151);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2.3rem; }
+.basic-form-control:focus {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2.3rem; }
+
+.fa__circle .fa:before {
+  color: #fff;
+  border: 1px solid #b6c0c1;
+  background: #b6c0c1;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+.fa__circle_sm .fa:before {
+  width: 2rem;
+  height: 2rem;
+  margin: 3px; }
+.fa__circle_md .fa:before {
+  width: 4rem;
+  height: 4rem;
+  margin: 3px; }
+.fa__circle_lg .fa:before {
+  color: #b2bebe;
+  background: #FFf;
+  border: 1px solid #b6c0c1;
+  width: 6rem;
+  height: 6rem;
+  margin: 3px; }
+
+.navbar-custom {
+  padding: 0;
+  font-size: 16px; }
+  .navbar-custom .navbar-nav .nav-link {
+    color: #b2bebe;
+    padding: 1.5rem; }
+  .navbar-custom-logo {
+    margin-left: 1rem; }
+  .navbar-custom-brand-text {
+    color: #4b5b6a;
+    font-size: 30px;
+    font-weight: 700; }
+  .navbar-custom-toggler {
+    margin-right: 1rem; }
+  .navbar-custom .box {
+    height: 1px;
+    width: 1px; }
+
+.nav-icon {
+  text-align: center;
+  color: #fff; }
+  .nav-icon-search {
+    padding: 23px 30px 15px;
+    background-color: #e2dee0; }
+  .nav-icon-user {
+    padding: 25px 60px 15px;
+    background-color: #e94e38; }
+
+.search-section {
+  text-align: center;
+  background: url(../img/bg-banner.png);
+  background-size: cover;
+  color: #fff;
+  padding: 4rem 0 2rem; }
+
+.search-form {
+  max-width: 540px;
+  margin: 0 auto; }
+  .search-form-group {
+    padding: 0 20px 0; }
+  .search-form .btn {
+    padding: 1rem 2rem; }
+
+/*# sourceMappingURL=styles.css.map */

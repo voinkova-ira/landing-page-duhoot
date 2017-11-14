@@ -1,0 +1,38 @@
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Book.otf')  format('opentype'),
+           url('../fonts/Gotham-Book.woff') format('woff'), url('Gotham-Book.ttf')  format('truetype'), url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body{
+    font-family: 'Gotham-Book';
+    font-size: 16px;
+    color: #4b5b6a;
+    font-size: 14px;
+    margin: auto;
+}
+// for buttons
+.btn-confirm{
+    color:#fff;
+    background-color: #e94e38;
+    border-radius: 2.3rem;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+// for input
+.basic-form{
+    &-control{
+        color:#fff;
+        border: 1px solid  rgba(255, 255, 255, 0.151);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 2.3rem;
+    }
+    &-control:focus{
+        color:#fff;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 2.3rem;
+    }
+}
