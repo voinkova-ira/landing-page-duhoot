@@ -1,0 +1,25 @@
+.posts-filter{
+    text-align: center;
+    &-items span{
+        padding-right: 1rem;
+    }
+    &-items{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+@media all and (min-width: 768px){
+    .posts-filter{
+        &-items{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &-align{
+            display: flex;
+            align-self: center;
+        }
+    }
+}

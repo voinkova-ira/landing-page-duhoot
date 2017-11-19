@@ -1,37 +1,66 @@
 .navbar-custom{
-    padding: 0;
+    padding: 0px;
     font-size: 16px;
     .navbar-nav .nav-link{
-        color: #b2bebe;
-        padding: 1.5rem;
+        color: $grey;
+        padding: 0.5rem 1rem;
     }
     &-logo{
         margin-left: 1rem;
     }
     &-brand-text{
-        color:#4b5b6a;
+        color:$ddgrey;
         font-size: 30px;
         font-weight: 700;
     }
     &-toggler{
         margin-right: 1rem;
     }
-    .box{
-        height:1px;
-        width:1px;
-    }
 }
+
 .nav-icon{
     text-align: center;
-    color:#fff;
         &-search{
-            padding: 23px 30px 15px;
-            background-color: #e2dee0;
+            background-color: $lgrey;
         }
         &-user{
-            padding: 25px 60px 15px;
-            background-color: #e94e38;
+            background-color: $red;
         }
 }
 
+@media (min-width: 992px){
+    .navbar-custom{
+        .navbar-nav .nav-link{
+            padding: 1.5rem 0.75rem;
+        }
+    }
+    .nav-icon{
+        display: flex;
+        align-items:stretch;
+        width: 13rem;
+        
+        &-search{
+            width:30%;
+            transition: width 2s;
+        }
+        &-user{
+            width:70%;
+        }
+    }
+    .nav-icon{
+        &-search:hover{
+            width: 13rem;
+            .header-form{
+                &-control{
+                    display: inline-block;;
+                }
+            }
+        }
+    }
+    .header-form{
+        &-control{
+            display: none;
+        }
+    }
+}
 

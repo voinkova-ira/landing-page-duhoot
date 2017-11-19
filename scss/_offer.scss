@@ -1,15 +1,7 @@
-.offer{
-//     .fa:before{
-//     color:greenyellow;
-//     display:flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     width: 2rem;
-//     height: 2rem;
-//     border: 1px solid red;
-//     background: green;
-//     border-radius: 50px;
-//     margin: 3px;
-//     text-align: center;
-// }
+
+.line{
+    top: 50%;
+    width:100%;
+    border-bottom: 2px solid $lgrey;
+    z-index: 1;
 }
