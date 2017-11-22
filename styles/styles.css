@@ -57,16 +57,16 @@ main {
 .text-dgrey {
   color: #4b5b6a; }
 
-a {
+.link {
   color: #9dacad; }
+
+.link:hover {
+  color: #e94e38;
+  text-decoration: none; }
 
 .link-dark {
   color: #4b5b6a;
   display: inline; }
-
-a:hover {
-  color: #e94e38;
-  text-decoration: none; }
 
 .link--decoration {
   text-decoration: underline; }
@@ -219,16 +219,9 @@ i {
             align-items: stretch;
     width: 13rem; }
     .nav-icon-search {
-      width: 30%;
-      -webkit-transition: width 2s;
-      transition: width 2s; }
+      width: 30%; }
     .nav-icon-user {
       width: 70%; }
-
-  .nav-icon-search:hover {
-    width: 13rem; }
-    .nav-icon-search:hover .header-form-control {
-      display: inline-block; }
 
   .header-form-control {
     display: none; } }
@@ -291,6 +284,12 @@ i {
   color: #88499c; }
 .card-purple .price-color {
   background-color: #88499c; }
+
+div[attr|="col"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
 
 .card {
   margin: 0.75rem 0 0.75rem; }

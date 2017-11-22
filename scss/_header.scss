@@ -41,22 +41,21 @@
         
         &-search{
             width:30%;
-            transition: width 2s;
         }
         &-user{
             width:70%;
         }
     }
-    .nav-icon{
-        &-search:hover{
-            width: 13rem;
-            .header-form{
-                &-control{
-                    display: inline-block;;
-                }
-            }
-        }
-    }
+    // .nav-icon{
+    //     &-search:hover{
+    //         width: 13rem;
+    //         .header-form{
+    //             &-control{
+    //                 display: inline-block;;
+    //             }
+    //         }
+    //     }
+    // }
     .header-form{
         &-control{
             display: none;

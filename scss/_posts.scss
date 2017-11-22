@@ -48,7 +48,12 @@
         background-color: $purple;
     }
 }
+div[attr|="col"]{
+    display:flex;
+    width:100%;
+}
 .card{
+
     margin: 0.75rem 0 0.75rem;
     &-body{
         padding: 1rem;
@@ -111,4 +116,8 @@
         border: 3px solid $lgrey;
         border-radius: 50%;
     }
+}
+
+.card{
+    
 }

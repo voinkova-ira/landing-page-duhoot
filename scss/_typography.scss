@@ -28,17 +28,18 @@
         color:$ddgrey;
     }
 }
-a{
+.link{
     color:$dgrey;
+}
+.link:hover{
+    color:$red;
+    text-decoration: none;
 }
 .link-dark{
     color:$ddgrey;
     display: inline;
 }
-a:hover{
-    color:$red;
-    text-decoration: none;
-}
+
 .link--decoration{
     text-decoration: underline;
     // color:$dgrey;
