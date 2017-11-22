@@ -17,7 +17,6 @@
         margin-right: 1rem;
     }
 }
-
 .nav-icon{
     text-align: center;
         &-search{
@@ -27,7 +26,6 @@
             background-color: $red;
         }
 }
-
 @media (min-width: 992px){
     .navbar-custom{
         .navbar-nav .nav-link{
@@ -38,25 +36,13 @@
         display: flex;
         align-items:stretch;
         width: 13rem;
-        
         &-search{
             width:30%;
-            // transition: width 2s;
         }
         &-user{
             width:70%;
         }
     }
-    // .nav-icon{
-    //     &-search:hover{
-    //         width: 13rem;
-    //         .header-form{
-    //             &-control{
-    //                 display: inline-block;;
-    //             }
-    //         }
-    //     }
-    // }
     .header-form{
         &-control{
             display: none;

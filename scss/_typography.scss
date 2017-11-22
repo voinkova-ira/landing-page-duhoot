@@ -22,14 +22,14 @@
         color: $green;
     }
     &-lgrey{
-        color:$dgrey;
+        color:$grey;
     }
     &-dgrey{
         color:$ddgrey;
     }
 }
 .link{
-    color:$dgrey;
+    color:$grey;
 }
 .link:hover{
     color:$red;
@@ -42,7 +42,6 @@
 
 .link--decoration{
     text-decoration: underline;
-    // color:$dgrey;
 }
 .link--decoration:hover{
     text-decoration: underline;

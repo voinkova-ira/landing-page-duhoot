@@ -53,7 +53,7 @@
     </header>
 
     <div class="search-section bg-main text-center text-white">
-        <div class=" container-fluid bg-darken bg-tracery py">
+        <div class=" container-fluid bg-darken bg-tracery py-form">
             <h1 class="font-size--30 mb-4 px-2">What are you looking for?</h1>
             <form class="basic-form search-form">
                 <div class="form-group search-form-group d-sm-flex">
@@ -75,20 +75,24 @@
             </form>
         </div>
     </div>
-    <div class="posts-filter py-1">
+    <div class="filter py-1">
         <div class="container text-uppercase">
             <div class="row">
-                <div class="col-md-4 mt-1 posts-filter-align">
-                    <div class="posts-filter-items ">
-                        <span><a class="link" href="#">Recommended</a></span>
-                        <span><a class="link" href="#">Latest</a></span>
-                        <span><a class="link" href="#">Highlights</a></span>
+                <div class="col-md-4 mt-1 filter-align">
+                    <div class="filter-items ">
+                        <a class="link" href="#">Recommended</a>
+                        <a class="link" href="#">Latest</a>
+                        <a class="link" href="#">Highlights</a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-1 posts-filter-align">
-                    <div class="posts-filter-items">
-                        <a href="#" class="btn btn-inverse ">Dubai <i class="fa fa-chevron-down fa-lgrey" aria-hidden="true"></i></a>
-                        <a href="#" class="btn btn-inverse">Show map <i class="fa fa-map-marker fa-lgrey" aria-hidden="true"></i></a>
+                <div class="col-md-4 mt-1 filter-align">
+                    <div class="filter-items">
+                        <select class="btn btn-inverse btn-inverse-grey">
+                            <option>Dubai</option>
+                            <option>select</option>
+                            <option>select</option>
+                        </select>
+                        <a href="#" class="btn btn-inverse btn-inverse-grey link">Show map <i class="fa fa-map-marker fa-lgrey" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-1">
@@ -105,23 +109,37 @@
         </div>
     </div>
     <main>
-        <div class="posts">
+        <div class="card-group">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-sm-6 col-md-3">
+                    <div class="col-6 col-sm-6 col-lg-3">
                         <div class="card card-sm card-green">
-                            <div class="position-relative">
+                            <div class="card-hover position-relative">
                                 <img class="card-img-top" src="img/apartment-vision.png" alt="apartment-vision-agency">
                                 <span class="card-sm-price price-color">$2,678</span>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="card-body border-color text-center">
+                            <div class="card-body card-sm-body border-color text-center">
                                 <div class="card-sm-icon fa--circle fa--circle-md ">
                                     <i class="fa--circle-border-w fa fa-home fa-2x fa--circle-green" aria-hidden="true"></i>
                                 </div>
                                 <p class="card-sm-text font-weight-bold">4 bedroom house for rent in Dubai</p>
                                 <div class="card-sm-rate font-size--11">
                                     <span class="card-sm-place text-color">Vision agency</span>
-                                    <div class="star star-orange">
+                                    <div class="card-rating card-rating-orange">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -133,20 +151,34 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3">
+                    <div class="col-6 col-sm-6 col-lg-3">
                         <div class="card card-sm card-orange">
                             <div class="position-relative">
                                 <img class="card-img-top" src="img/party-beach.png" alt="party-beach">
                                 <span class="card-sm-price price-color">$28</span>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="card-body border-color text-center">
+                            <div class="card-body card-sm-body border-color text-center">
                                 <div class="card-sm-icon fa--circle fa--circle-md ">
                                     <i class="fa--circle-border-w fa fa-music fa-2x fa--circle-orange" aria-hidden="true"></i>
                                 </div>
                                 <p class="card-sm-text font-weight-bold">Beach party festival</p>
                                 <div class="card-sm-rate font-size--11">
                                     <span class="card-sm-place text-color">Long Beach</span>
-                                    <div class="star star-orange">
+                                    <div class="card-rating card-rating-orange">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -158,19 +190,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3">
+                    <div class="col-6 col-sm-6 col-lg-3">
                         <div class="card card-sm card-purple">
                             <div class="position-relative">
                                 <img class="card-img-top" src="img/party-beach.png" alt="party-beach">
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="card-body border-color text-center">
+                            <div class="card-body card-sm-body border-color text-center">
                                 <div class="card-sm-icon fa--circle fa--circle-md ">
                                     <i class="fa--circle-border-w fa fa-bus fa-2x fa--circle-purple" aria-hidden="true"></i>
                                 </div>
                                 <p class="card-sm-text font-weight-bold">Cool and quickly bus</p>
                                 <div class="card-sm-rate font-size--11">
                                     <span class="card-sm-place text-color">Bus trance</span>
-                                    <div class="star star-orange">
+                                    <div class="card-rating card-rating-orange">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -182,20 +228,34 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3">
+                    <div class="col-6 col-sm-6 col-lg-3">
                         <div class="card card-sm card-green">
                             <div class="position-relative">
                                 <img class="card-img-top" src="img/apartment-reality.png" alt="apartment-reality-agency">
                                 <span class="card-sm-price price-color">$2,990</span>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="card-body border-color text-center">
+                            <div class="card-body card-sm-body border-color text-center">
                                 <div class="card-sm-icon fa--circle fa--circle-md ">
                                     <i class="fa--circle-border-w fa fa-home fa-2x fa--circle-green" aria-hidden="true"></i>
                                 </div>
                                 <p class="card-sm-text font-weight-bold">2 bedroom house for rent in Dubai</p>
                                 <div class="card-sm-rate font-size--11">
                                     <span class="card-sm-place text-color">Reality agency</span>
-                                    <div class="star star-orange">
+                                    <div class="card-rating card-rating-orange">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -209,14 +269,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 ">
+                    <div class="col-lg-6 ">
                         <div class="card card-md card-green">
                             <div class="position-relative">
                                 <img class="card-img-top" src="img/apartment.png" alt="apartment">
-                                <div class="transparent"></div>
+                                <div class="card-md-transparent"></div>
                                 <div class="card-md-rate text-white">
                                     <span class="font-size--18 text-uppercase pr-2">Vision agency</span>
-                                    <div class="star star-orange d-inline-block font-size--11">
+                                    <div class="card-rating card-rating-orange d-inline-block font-size--11">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -225,20 +285,26 @@
                                         <span>(365)</span>
                                     </div>
                                 </div>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                </a>
                             </div>
                             <div class="card-body border-color">
                                 <div class="card-md-icon fa--circle fa--circle-md fa--circle-border-w">
                                     <i class="fa fa-home fa-2x fa--circle-green" aria-hidden="true"></i>
                                 </div>
-                                <div class="star star-orange pl pb-2">
+                                <div class="card-rating card-rating-orange pl-6 pb-2">
                                     <i class="fa fa-star fa-lg" aria-hidden="true"></i>
                                     <i class="fa fa-star fa-lg" aria-hidden="true"></i>
                                     <i class="fa fa-star fa-lg" aria-hidden="true"></i>
                                     <i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
                                     <i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
                                 </div>
-                                <img src="img/avatar2.png" alt="user" class="position-absolute border-grey">
-                                <div class="position-relative pl">
+                                <img src="img/avatar2.png" alt="user" class="card-md-avatar card-md-avatar-border">
+                                <div class="position-relative pl-6">
                                     <span class="d-block font-size--16-bold text-uppercase">Lucy-P</span>
                                     <span class="card-md-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
                                     <a href="#" class="link-dark link--decoration-bold ">...read more</a>
@@ -246,14 +312,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="card card-md card-orange">
                             <div class="position-relative">
                                 <img class="card-img-top" src="img/party.png" alt="party">
-                                <div class="transparent"></div>
+                                <div class="card-md-transparent"></div>
                                 <div class="card-md-rate text-white">
                                     <span class="font-size--18 text-uppercase pr-2">Skybox Club</span>
-                                    <div class="star star-orange d-inline-block font-size--11">
+                                    <div class="card-rating card-rating-orange d-inline-block font-size--11">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -262,20 +328,26 @@
                                         <span>(1365)</span>
                                     </div>
                                 </div>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                </a>
                             </div>
                             <div class="card-body border-color">
                                 <div class="card-md-icon fa--circle fa--circle-md fa--circle-border-w">
                                     <i class="fa fa-home fa-2x fa--circle-orange" aria-hidden="true"></i>
                                 </div>
-                                <div class="star star-orange pl pb-2">
+                                <div class="card-rating card-rating-orange pl-6 pb-2">
                                     <i class="fa fa-star fa-lg" aria-hidden="true"></i>
                                     <i class="fa fa-star fa-lg" aria-hidden="true"></i>
                                     <i class="fa fa-star fa-lg" aria-hidden="true"></i>
                                     <i class="fa fa-star fa-lg" aria-hidden="true"></i>
                                     <i class="fa fa-star fa-lg" aria-hidden="true"></i>
                                 </div>
-                                <img src="img/avatar1.png" alt="user" class="position-absolute border-grey">
-                                <div class="position-relative pl">
+                                <img src="img/avatar1.png" alt="user" class="card-md-avatar card-md-avatar-border">
+                                <div class="position-relative pl-6">
                                     <span class="d-block font-size--16-weight-bold text-uppercase">Peter145</span>
                                     <span class="card-md-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
                                     <a href="#" class="link-dark link--decoration font-weight-bold ">...read more</a>
@@ -285,63 +357,34 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card card-md card-orange">
-                            <div class="position-relative">
-                                <img class="card-img-top" src="img/party.png" alt="party">
-                                <div class="transparent"></div>
-                                <div class="card-md-rate text-white">
-                                    <span class="font-size--18 text-uppercase pr-2">Skybox Club</span>
-                                    <div class="star star-orange d-inline-block font-size--11">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <span>(1365)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body border-color">
-                                <div class="card-md-icon fa--circle fa--circle-md fa--circle-border-w">
-                                    <i class="fa fa-home fa-2x fa--circle-orange" aria-hidden="true"></i>
-                                </div>
-                                <div class="star star-orange pl pb-2">
-                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-                                </div>
-                                <img src="img/avatar1.png" alt="user" class="position-absolute border-grey">
-                                <div class="position-relative pl">
-                                    <span class="d-block font-size--16-bold text-uppercase">Peter145</span>
-                                    <span class="card-md-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
-                                    <a href="#" class="link-dark link--decoration font-weight-bold ">...read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-3">
+                    <div class="col-6 col-sm-6 col-lg-3">
                         <div class="card card-sm card-green">
-                            <div class="position-relative">
+                            <div class="card-hover position-relative">
                                 <img class="card-img-top" src="img/apartment-vision.png" alt="apartment-vision-agency">
                                 <span class="card-sm-price price-color">$2,678</span>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="card-body border-color text-center">
+                            <div class="card-body card-sm-body border-color text-center">
                                 <div class="card-sm-icon fa--circle fa--circle-md ">
                                     <i class="fa--circle-border-w fa fa-home fa-2x fa--circle-green" aria-hidden="true"></i>
                                 </div>
                                 <p class="card-sm-text font-weight-bold">4 bedroom house for rent in Dubai</p>
                                 <div class="card-sm-rate font-size--11">
                                     <span class="card-sm-place text-color">Vision agency</span>
-                                    <div class="star star-orange">
+                                    <div class="card-rating card-rating-orange">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -353,20 +396,234 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3">
+                    <div class="col-6 col-sm-6 col-lg-3">
                         <div class="card card-sm card-orange">
                             <div class="position-relative">
                                 <img class="card-img-top" src="img/party-beach.png" alt="party-beach">
                                 <span class="card-sm-price price-color">$28</span>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="card-body border-color text-center">
+                            <div class="card-body card-sm-body border-color text-center">
                                 <div class="card-sm-icon fa--circle fa--circle-md ">
                                     <i class="fa--circle-border-w fa fa-music fa-2x fa--circle-orange" aria-hidden="true"></i>
                                 </div>
                                 <p class="card-sm-text font-weight-bold">Beach party festival</p>
                                 <div class="card-sm-rate font-size--11">
                                     <span class="card-sm-place text-color">Long Beach</span>
-                                    <div class="star star-orange">
+                                    <div class="card-rating card-rating-orange">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span class="text-lgrey"> (1365)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="card card-sm card-purple">
+                            <div class="position-relative">
+                                <img class="card-img-top" src="img/party-beach.png" alt="party-beach">
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body card-sm-body border-color text-center">
+                                <div class="card-sm-icon fa--circle fa--circle-md ">
+                                    <i class="fa--circle-border-w fa fa-bus fa-2x fa--circle-purple" aria-hidden="true"></i>
+                                </div>
+                                <p class="card-sm-text font-weight-bold">Cool and quickly bus</p>
+                                <div class="card-sm-rate font-size--11">
+                                    <span class="card-sm-place text-color">Bus trance</span>
+                                    <div class="card-rating card-rating-orange">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-lgrey"> (365)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="card card-sm card-green">
+                            <div class="position-relative">
+                                <img class="card-img-top" src="img/apartment-reality.png" alt="apartment-reality-agency">
+                                <span class="card-sm-price price-color">$2,990</span>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body card-sm-body border-color text-center">
+                                <div class="card-sm-icon fa--circle fa--circle-md ">
+                                    <i class="fa--circle-border-w fa fa-home fa-2x fa--circle-green" aria-hidden="true"></i>
+                                </div>
+                                <p class="card-sm-text font-weight-bold">2 bedroom house for rent in Dubai</p>
+                                <div class="card-sm-rate font-size--11">
+                                    <span class="card-sm-place text-color">Reality agency</span>
+                                    <div class="card-rating card-rating-orange">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-lgrey"> (365)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card card-md card-orange">
+                            <div class="position-relative">
+                                <img class="card-img-top" src="img/party.png" alt="party">
+                                <div class="card-md-transparent"></div>
+                                <div class="card-md-rate text-white">
+                                    <span class="font-size--18 text-uppercase pr-2">Skybox Club</span>
+                                    <div class="card-rating card-rating-orange d-inline-block font-size--11">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span>(1365)</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body border-color">
+                                <div class="card-md-icon fa--circle fa--circle-md fa--circle-border-w">
+                                    <i class="fa fa-home fa-2x fa--circle-orange" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-rating card-rating-orange pl-6 pb-2">
+                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                                </div>
+                                <img src="img/avatar1.png" alt="user" class="card-md-avatar card-md-avatar-border">
+                                <div class="position-relative pl-6">
+                                    <span class="d-block font-size--16-bold text-uppercase">Peter145</span>
+                                    <span class="card-md-text">Some quick example text to build on the card title and make up the bulk of the card's content.</span>
+                                    <a href="#" class="link-dark link--decoration font-weight-bold ">...read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="card card-sm card-green">
+                            <div class="position-relative">
+                                <img class="card-img-top" src="img/apartment-vision.png" alt="apartment-vision-agency">
+                                <span class="card-sm-price price-color">$2,678</span>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body card-sm-body border-color text-center">
+                                <div class="card-sm-icon fa--circle fa--circle-md ">
+                                    <i class="fa--circle-border-w fa fa-home fa-2x fa--circle-green" aria-hidden="true"></i>
+                                </div>
+                                <p class="card-sm-text font-weight-bold">4 bedroom house for rent in Dubai</p>
+                                <div class="card-sm-rate font-size--11">
+                                    <span class="card-sm-place text-color">Vision agency</span>
+                                    <div class="card-rating card-rating-orange">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <span class="text-lgrey"> (165)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="card card-sm card-orange">
+                            <div class="position-relative">
+                                <img class="card-img-top" src="img/party-beach.png" alt="party-beach">
+                                <span class="card-sm-price price-color">$28</span>
+                                <a href="#" class="card-show-more show-more-color">
+                                    <div class="btn btn-inverse btn-inverse-white">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        Show more
+                                    </div>
+                                    <div class="card-rating card-rating-white pt-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-comments-o fa-lg pl-2" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body card-sm-body border-color text-center">
+                                <div class="card-sm-icon fa--circle fa--circle-md ">
+                                    <i class="fa--circle-border-w fa fa-music fa-2x fa--circle-orange" aria-hidden="true"></i>
+                                </div>
+                                <p class="card-sm-text font-weight-bold">Beach party festival</p>
+                                <div class="card-sm-rate font-size--11">
+                                    <span class="card-sm-place text-color">Long Beach</span>
+                                    <div class="card-rating card-rating-orange">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -406,11 +663,11 @@
                 <div class="row fa--circle fa--circle-md ">
                     <div class="col-md-6 pb-4">
                         <i class="fa fa-bolt fa-2x fa--circle-green position-absolute" aria-hidden="true"></i>
-                        <p class="position-relative pl">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                        <p class="position-relative pl-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
                     </div>
-                    <div class="col-md-6 pb-4">
+                    <div class="col-md pb-4">
                         <i class="fa fa-leaf fa-2x fa--circle-green position-absolute" aria-hidden="true"></i>
-                        <p class="position-relative pl">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                        <p class="position-relative pl-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
                     </div>
                 </div>
             </div>
@@ -419,7 +676,7 @@
     </main>
     
     <div class="bg-main text-white">
-        <div class="container-fluid bg-darken py">
+        <div class="container-fluid bg-darken py-form">
             <div class="text-center">
                 <p class="font-size--22">Subscribe to our newsletter</p>
                 <form class="basic-form">

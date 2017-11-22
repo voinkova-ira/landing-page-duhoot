@@ -2,8 +2,9 @@ i{
     color:$white;
 }
 .fa-lgrey{
-    color:$dgrey;
+    color:$grey;
 }
+
 .fa--circle{
     .fa{
             border-radius: 50%;
@@ -46,21 +47,37 @@ i{
         background: $purple;
     }
     &-inverse{
-        color: $dgrey;
+        color: $grey;
         background: $llgrey;
-        border: 2px solid $dgrey;
+        border: 2px solid $grey;
     }
     &-inverse:hover{
         color: $green;
         background: $white;
         border: 2px solid $green;
+        animation-name: animated-icon;
+        animation-duration: 1.5s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
     }
     &-border-w{
         border: 3px solid $white;
         border-radius: 50%;
     }
 }
-
+@keyframes animated-icon{
+    from{
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2rem;
+        transform: rotate(0deg);}
+    to{
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.5rem;
+        transform: rotate(360deg);
+    }
+}
 @media all and (min-width: 600px) {
     .fa--circle{
         &-lg{
@@ -71,7 +88,19 @@ i{
             }
         }
         &-inverse{
-            outline: 5px solid $llgrey;
+            box-shadow: 0 0 5px 5px $llgrey;
+        }
+    }
+    @keyframes animated-icon {
+        from {width: 6rem;
+            height: 6rem;
+            font-size: 4em;
+            transform: rotate(0deg);}
+        to {
+            width: 6.5rem;
+            height: 6.5rem;
+            font-size: 4.5em;
+            transform: rotate(360deg);
         }
     }
 }

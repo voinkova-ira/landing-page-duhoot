@@ -1,6 +1,6 @@
-.posts-filter{
+.filter{
     text-align: center;
-    &-items span{
+    &-items .link{
         padding-right: 1rem;
     }
     &-items{
@@ -11,7 +11,7 @@
 
 }
 @media all and (min-width: 768px){
-    .posts-filter{
+    .filter{
         &-items{
             display: flex;
             justify-content: space-between;

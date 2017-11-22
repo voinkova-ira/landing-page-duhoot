@@ -6,22 +6,24 @@
         color:$white;
         border: 1px solid  $transparent;
         background-color: $transparent;
-        border-radius: 2.3rem;
+        border-radius: $border-radius;
     }
     &-control:focus{
         color:$white;
         background-color: $transparent;
-        border-radius: 2.3rem;
+        border-radius: $border-radius;
     }
+}
+.py-form{
+    padding: 4rem 0 2rem;
 }
 //header
 .header-form{
     &-control{
         border: 1px solid $red;
-        border-radius: 2.3rem;
+        border-radius: $border-radius;
     }
 }
-
 //search section form
 .search-form{
     &-group{
