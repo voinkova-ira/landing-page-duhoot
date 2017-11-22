@@ -83,16 +83,9 @@ i {
 
 .fa--circle .fa {
   border-radius: 50%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center; }
 .fa--circle-sm .fa {
   width: 2.5rem;
@@ -211,12 +204,8 @@ i {
     padding: 1.5rem 0.75rem; }
 
   .nav-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    align-items: stretch;
     width: 13rem; }
     .nav-icon-search {
       width: 30%; }
@@ -230,30 +219,18 @@ i {
   .posts-filter-items span {
     padding-right: 1rem; }
   .posts-filter-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
 
 @media all and (min-width: 768px) {
   .posts-filter-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
   .posts-filter-align {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-        align-self: center; } }
+    align-self: center; } }
 .posts {
   border-top: 1px solid #e2dee0;
   border-bottom: 1px solid #e2dee0;
@@ -263,6 +240,12 @@ i {
   color: #f19e1f; }
 .star-white .fa {
   color: #ffffff; }
+
+.line {
+  top: 50%;
+  width: 100%;
+  border-bottom: 2px solid #e2dee0;
+  z-index: 1; }
 
 .card-green .border-color {
   border-top: 3px solid #1db05e; }
@@ -333,18 +316,7 @@ div[attr|="col"] {
   bottom: 0;
   width: 100%;
   height: 3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black));
   background: linear-gradient(rgba(255, 255, 255, 0), black); }
-.card-md .comment {
-  background-color: #ffffff; }
 .card-md .border-grey {
   border: 3px solid #e2dee0;
   border-radius: 50%; }
-
-.line {
-  top: 50%;
-  width: 100%;
-  border-bottom: 2px solid #e2dee0;
-  z-index: 1; }
-
-/*# sourceMappingURL=styles.css.map */
